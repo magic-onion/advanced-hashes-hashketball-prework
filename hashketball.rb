@@ -167,6 +167,7 @@ end
 def team_names
   teams = []
  game_hash.each do |location, team|
+   team.each do |team_data, data|
    binding.pry
    if team == :team_name
      teams << team[:team_name]
